@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+        table {
+            width: 100%;
+            margin: 0px 0px;
+            border: 0px solid #999999;
+        }
+        td {
+            border: 0px solid #999999;
+            padding: 10px;
+        }
+        table.a {
+            empty-cells: show;
+        }
+        table.b {
+            empty-cells: hide;
+        }
+        table.c {
+            empty-cells: hide;
+            border-collapse: collapse;
+        }
+    </style>
+    <script language="javascript">
+
+        function resizeVideoPage(){
+            var width = 600;
+            var height = 400;
+            window.resizeTo(width, height);
+            window.moveTo(((screen.width - width) / 2), ((screen.height - height) / 2));
+        }
+    </script>
     <title>FAQ</title>
 </head>
-<body>
-
+<body onload="resizeVideoPage();">
+<a id="faq" name="faq"></a>
+<table class="tb">
+    <tr><td><img src="img/fitnesscamp_faq.jpg"</td></tr>
+</table>
 </body>
 </html>
